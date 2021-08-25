@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm("Logueo", "Empleados", FormMethod.Post))
+{
+    <label>Nombre</label>
+    <input type="text" name="Nombre" value="" />
+    <br />
+    <label>DUI</label>
+    <input type="number" name="DUI" value="" />
+    <br />
+    <input type="submit">
+    <br>
+    <br />
+}

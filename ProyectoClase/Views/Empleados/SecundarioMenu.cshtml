@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "SecundarioMenu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Bienvenido, usuario</h2>
+
+@using (Html.BeginForm("Procesador", "Empleados", FormMethod.Post))
+{
+    @*<label>Nombre</label>
+        <input type="text" name="Nombre" value="" />
+        <br />
+        <label>DUI</label>
+        <input type="number" name="DUI" value="" />
+        <br />
+        <input type="submit">
+        <br>
+        <br />*@
+
+
+    <label>Nombre</label>
+    <input type="text" name="Nombre" value="" />
+    <br />
+    <label>ValorHora</label>
+    <input type="number" name="ValorHora" value="" />
+    <br />
+    <label>Antiguedad</label>
+    <input type="number" name="Antiguedad" value="" />
+    <br />
+    <label>HorasTrabajadas</label>
+    <input type="number" name="HorasTrabajadas" value="" />
+    <br />
+    <input type="submit">
+    <br>
+    <br />
+}
